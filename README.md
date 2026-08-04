@@ -192,3 +192,91 @@ git add .
 git commit -m "Completed exploratory data analysis and integrated healthcare expenditure datasets"
 git push origin main
 ```
+
+# Progress Update – August 4, 2026
+
+## Overview
+
+Today's work focused on expanding the healthcare dataset and conducting the initial exploratory data analysis (EDA) for Germany and India. Two additional healthcare expenditure indicators were integrated into the master dataset, and comparative trend visualizations were created to begin exploring changes in healthcare accessibility and health outcomes over time.
+
+---
+
+## Completed Tasks
+
+### Data Integration
+
+- Added **Current Health Expenditure (% of GDP)** from the World Bank.
+- Added **Out-of-Pocket Health Expenditure (% of Current Health Expenditure)** from the World Bank.
+- Filtered both datasets to include only **Germany** and **India**.
+- Selected data covering the period **1990–2024**.
+- Filled missing values using **Linear Regression**.
+- Merged the new variables into the master dataset.
+- Saved the updated dataset as `master_dataset_updated.csv`.
+
+---
+
+### Exploratory Data Analysis (EDA)
+
+Created comparative line charts for the following indicators:
+
+#### Healthcare Accessibility
+
+- Physician Density (per 1,000 population)
+- Hospital Beds (per 1,000 population)
+- Current Health Expenditure (% of GDP)
+- Out-of-Pocket Health Expenditure (% of Current Health Expenditure)
+
+#### Health Outcomes
+
+- Life Expectancy at Birth
+- Diabetes Prevalence
+- Probability of Dying from Non-Communicable Diseases (NCDs)
+
+---
+
+### Figures
+
+All visualizations were exported to the `figures/` directory as high-resolution PNG files.
+
+```text
+figures/
+│
+├── physician_density_trend.png
+├── hospital_beds_trend.png
+├── health_expenditure_trend.png
+├── out_of_pocket_trend.png
+├── life_expectancy_trend.png
+├── diabetes_prevalence_trend.png
+└── ncd_mortality_trend.png
+```
+
+---
+
+## Skills Applied
+
+- Data Cleaning
+- Data Transformation
+- Data Integration
+- Missing Value Imputation (Linear Regression)
+- Exploratory Data Analysis (EDA)
+- Time Series Visualization
+- Python (Pandas & Matplotlib)
+
+---
+
+## Next Steps
+
+- Interpret trends observed in each visualization.
+- Perform correlation analysis between healthcare accessibility indicators and health outcomes.
+- Generate correlation heatmaps and scatterplots.
+- Begin drafting the Results and Discussion sections based on the exploratory findings.
+
+---
+
+## Git Commit
+
+```bash
+git add .
+git commit -m "Completed exploratory data analysis and integrated healthcare expenditure datasets"
+git push origin main
+```
