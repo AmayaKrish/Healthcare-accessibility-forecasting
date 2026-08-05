@@ -194,3 +194,121 @@ git push origin main
 ```
 
 
+# Progress Update – August 5, 2026
+
+## Overview
+
+Today's work focused on exploring the relationships between healthcare accessibility indicators and health outcomes through correlation analysis. The objective was to identify potential associations that will inform the regression models developed in the next stage of the project.
+
+---
+
+## Completed Tasks
+
+### Dataset Validation
+
+- Loaded the updated master dataset.
+- Verified data types and dataset structure.
+- Generated descriptive statistics for all variables.
+- Confirmed that there were no missing values in the variables selected for analysis.
+
+---
+
+### Correlation Analysis
+
+Performed correlation analysis using the following variables:
+
+#### Healthcare Accessibility
+- Physician Density
+- Hospital Beds per 1,000 Population
+- Current Health Expenditure (% of GDP)
+- Out-of-Pocket Health Expenditure (% of Current Health Expenditure)
+
+#### Health Outcomes
+- Life Expectancy
+- Diabetes Prevalence
+- Probability of Dying from Non-Communicable Diseases (NCDs)
+
+#### Economic Indicators
+- GDP per Capita
+- Urban Population
+
+Generated:
+- Correlation matrix
+- Correlation coefficient table
+- Correlation heatmap
+
+Exported:
+- `correlation_matrix.csv`
+- `figures/correlation_heatmap.png`
+
+---
+
+### Relationship Analysis
+
+Created scatterplots to examine relationships between key variables:
+
+- Physician Density vs. Life Expectancy
+- Hospital Beds vs. Life Expectancy
+- Health Expenditure vs. Life Expectancy
+- Out-of-Pocket Expenditure vs. Life Expectancy
+- Diabetes Prevalence vs. Life Expectancy
+- GDP per Capita vs. Life Expectancy
+
+All figures were exported as high-resolution PNG files to the `figures/` directory.
+
+---
+
+### Project Organization
+
+Organized project outputs by saving:
+
+```text
+figures/
+│
+├── correlation_heatmap.png
+├── physicians_vs_life_expectancy.png
+├── beds_vs_life_expectancy.png
+├── health_expenditure_vs_life_expectancy.png
+├── oop_vs_life_expectancy.png
+├── diabetes_vs_life_expectancy.png
+└── gdp_vs_life_expectancy.png
+```
+
+Prepared the project for regression analysis by creating the notebook:
+
+```text
+05_Regression_Models.ipynb
+```
+
+---
+
+## Skills Applied
+
+- Correlation Analysis
+- Pearson Correlation Coefficient
+- Exploratory Relationship Analysis
+- Data Visualization with Matplotlib
+- Heatmap Generation
+- Scatterplot Analysis
+- Data Validation using Pandas
+- Project Organization and Documentation
+
+---
+
+## Next Steps
+
+- Build multiple linear regression models to predict life expectancy.
+- Compare regression model performance using healthcare accessibility and health outcome variables.
+- Evaluate model assumptions and goodness of fit.
+- Interpret regression coefficients and discuss their implications for healthcare accessibility in Germany and India.
+
+---
+
+## Git Commit
+
+```bash
+git add .
+git commit -m "Completed correlation analysis, generated heatmap and scatterplots, and prepared regression notebook"
+git push origin main
+```
+
